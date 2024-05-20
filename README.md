@@ -15,6 +15,7 @@ This project serves as a demonstration of how to utilize the ai4r gem in a Ruby 
 Before running this project, make sure you have the following prerequisites installed:
 
 - Ruby (version 3.0.0)
+- Rails (version 7.1.3)
 - Bundler (for managing gem dependencies)
 
 ### Installation
@@ -30,17 +31,11 @@ bundle install
 
 ## Usage: 
 
-To run the demo, execute the following command:
-ruby ruby-ai4r
-
-This will execute the demo script, which showcases various functionalities of the ai4r gem.
-
 # Fruits Classification
 This project includes a form where the user can select properties such as color, size, and texture of a fruit. Based on the selected properties, the application evaluates the parameters and returns the predicted fruit.
 
 # To classify a fruit:
 
-Run the demo script (ruby demo.rb).
 Open your web browser and navigate to http://localhost:3000.
 Fill out the form by selecting properties for the fruit.
 Click on the "Classify" button.
