@@ -1,0 +1,20 @@
+<div class="form-container">
+  <h1>Classify Fruit</h1>
+  <%= form_tag classify_path do %>
+    <%= label_tag :color, 'Color:' %>
+    <%= select_tag :color, options_for_select([['Red', :red], ['Yellow', :yellow], ['Green', :green]]) %><br>
+
+    <%= label_tag :size, 'Size:' %>
+    <%= select_tag :size, options_for_select([['Small', :small], ['Medium', :medium], ['Large', :large]]) %><br>
+
+    <%= label_tag :texture, 'Texture:' %>
+    <%= select_tag :texture, options_for_select([['Smooth', :smooth], ['Rough', :rough]]) %><br>
+
+    <%= submit_tag 'Classify' %>
+  <% end %>
+
+  <% if @prediction %>
+    <h2>Predicted Class:</h2>
+    <p><%= @prediction %></p>
+  <% end %>
+</div>
